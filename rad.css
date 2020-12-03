@@ -12,9 +12,12 @@ html {
 }
 
 /* Color each language element */
-#ruby {background-color: #DF4638;}
-#python {background-color: #8DAD53;}
-#js {background-color: #6D4596;}
+#ruby {background-color: #DF4638;
+grid-column: span 3 ;}
+#python {background-color: #8DAD53;
+grid-row: span 2;}
+#js {background-color: #6D4596;
+grid-row: span 5;}
 #hyper {background-color: #F7CC77;}
 #css {background-color: #2454DB;}
 #aframe {background-color: #DB4260;}
@@ -23,7 +26,8 @@ html {
 #java {background-color: #CA2B1D;}
 #swift {background-color: #ED7B46;}
 #csharp {background-color: #1F5997;}
-#go {background-color: #8ACCDB;}
+#go {background-color: #8ACCDB;
+grid-column: span 3;}
 
 /* Style the font of the language elements */
 .cell {
@@ -37,5 +41,7 @@ html {
 
 /* Style your grid here */
 #grid {
-    
+    display:grid;
+    grid-gap: 8px;
+    grid-template-columns: 100px 250px 100px;
 }
